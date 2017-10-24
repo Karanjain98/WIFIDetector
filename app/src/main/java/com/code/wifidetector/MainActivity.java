@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(TAG,"INSIDE ON CREATE" );
         WifiManager wifiManager = (WifiManager) this.getSystemService(Context.WIFI_SERVICE);
         rv= (RecyclerView) findViewById(R.id.rv);
         WIFIAdapter wa=new WIFIAdapter();
