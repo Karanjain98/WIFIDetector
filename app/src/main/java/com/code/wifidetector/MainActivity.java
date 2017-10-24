@@ -43,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             String a=wifiList.toString();
             Log.d(TAG, "onCreate: "+level+"out of 5"+wifiList.toString());
         }
+        for(ScanResult scanResult : wifiList)
+        {
+
+            int level2=WifiManager.calculateSignalLevel(scanResult.level,10)
+
+            String ab=wifiList.toString();
+        }
 
 // Level of current connection
         int rssi = wifiManager.getConnectionInfo().getRssi();
