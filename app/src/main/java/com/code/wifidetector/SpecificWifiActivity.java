@@ -57,6 +57,10 @@ public class SpecificWifiActivity extends AppCompatActivity {
         this.registerReceiver(myRssiChangeReceiver, rssiFilter);
 
         WifiManager wifiMan=(WifiManager) SpecificWifiActivity.this.getSystemService(Context.WIFI_SERVICE);
+        for(int i=0;i<10;i++)
+            if(wifiMan.strength<0)
+                wifiMAn.strength = 0;
+
         wifiMan.startScan();
     }
 
