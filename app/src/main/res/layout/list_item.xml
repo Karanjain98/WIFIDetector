@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -7,11 +7,14 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:textSize="20dp"
-android:padding="10dp"
+	android:padding="10dp"
         android:id="@+id/name"/>
-    <View
+    <CardView
         android:layout_width="match_parent"
         android:layout_height="2dp"
+	android:textSize="20dp"
+	android:padding="10dp"
+	android:font_size=10
         android:background="#000000"></View>
 
 </LinearLayout>
