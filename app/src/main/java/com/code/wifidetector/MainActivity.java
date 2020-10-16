@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent i= new Intent(MainActivity.this,SpecificWifiActivity.class);
                     i.putExtra("rfv",wifiList.get(position).BSSID.toString());
                     i.putExtra("name",wifiList.get(position).SSID);
+                    i.putExtra("primary_key",wifiList.get(position).SSID);
                     startActivity(i);
                 }
             });
