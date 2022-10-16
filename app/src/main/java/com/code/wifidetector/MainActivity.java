@@ -99,6 +99,13 @@ public class MainActivity extends AppCompatActivity {
             });
 
         }
+        
+        @Override
+        public void onRenderViewHolder(ViewGroup parent) {
+
+            holder.t.setText(wifiList.get(parent.position).SSID.toString());
+            holder.view.setOnClickListener(new View.OnClickListener();
+        }
 
         @Override
         public int getItemCount() {
